@@ -10,8 +10,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
-
     <title>Vite App</title>
 </head>
 
@@ -26,68 +24,122 @@
     </header>
     <main>
         <div>
-            <p class="font-semibold text-sm text-right pl-30"><span class="teal">Об’єднуємо</span> майстрів та клієнтів
+            <p class="font-semibold text-sm text-right pl-30 md:pl-120"><span class="teal">Об’єднуємо</span> майстрів
+                та
+                клієнтів
                 для
                 найкращого
                 <span class="teal">б’юті-досвіду</span>
             </p>
         </div>
-        <div class="flex items-start justify-center flex-col gap-2 font-bold text-[32px] text-left ml-4.5 my-28.5">
+        <div
+            class="flex items-start justify-center flex-col gap-2 font-bold text-[32px] text-left ml-4.5 my-28.5 md:items-center md:font-semibold md:text-6xl md:mb-5">
             <div class="flex items-center gap-1.5">
-                <p>Vroda Space</p><img src="/assets/h1line.png" alt="Decorative line" width="99" height="14" />
+                <p>Vroda Space</p>
+                <img src="/assets/h1line.png" alt="Decorative line" width="99" height="14" class="md:w-44" />
             </div>
             <p class="pl-26">твій простір</p>
             <p><span class="gradient">краси</span> та зручності</p>
         </div>
-        <div class="flex gap-4 justify-end">
-            <div class="flex flex-col gap-1">
-                <p class="font-semibold text-sm">Наш блог</p>
-                <p class="text-[#999] text-xs font-medium pb-5">+15 нових тем</p>
-                <button class="bg-black rounded-[11px] size-11 "><i class="fa-solid fa-arrow-right"></i></button>
-            </div>
-            <img src="/assets/mobBlogPic.png" alt="Decorative girl image" width="84" height="102" />
-        </div>
-        <div class="text-[#999] my-6">
-            <i class="fa-solid fa-people-group"></i>
-            <p>Майстрам <br> та салонам <br> і задоволеним клієнтам</p>
-        </div>
         <button
-            class="bg-red-400 w-full py-5 px-12 text-[15px] font-semibold rounded-[16px] flex items-center justify-center">
+            class="bg-red-400 w-full py-5 px-12 text-[15px] font-semibold rounded-[16px]  items-center justify-center md:w-[279px] hidden md:flex md:mx-auto md:px-3 md:mb-10">
             Приєднатися до Vroda Space
             <span class="rounded-lg bg-white text-red-400 size-6 ml-2 px-2 py-1.5 flex items-center justify-center">
                 <i class="fa-solid fa-angle-right"></i>
             </span>
         </button>
-        <img src="/assets/mobAdvPic.png" alt="Advantages picture" width="343" height="106" class="my-16" />
+        <div class="md:flex md:flex-items-reverse md:justify-between mb-14">
+            <div class="flex gap-4 justify-end md:flex-row-reverse">
+                <div class="flex flex-col gap-1">
+                    <p class="font-semibold text-sm">Наш блог</p>
+                    <p class="text-[#999] text-xs font-medium pb-5">+15 нових тем</p>
+                    <button class="bg-black rounded-[11px] size-11 "><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+                <img src="/assets/mobBlogPic.png" alt="Decorative girl image" width="84" height="102" class="md:w-30" />
+            </div>
+            <div class="text-[#999] my-6 md:text-right">
+                <i class="fa-solid fa-people-group"></i>
+                <p>Майстрам <br> та салонам <br> і задоволеним клієнтам</p>
+            </div>
+        </div>
+        <button
+            class="md:hidden bg-red-400 w-full py-5 px-12 text-[15px] font-semibold rounded-[16px] flex items-center justify-center md:w-[279px] md:mx-auto md:px-3">
+            Приєднатися до Vroda Space
+            <span class="rounded-lg bg-white text-red-400 size-6 ml-2 px-2 py-1.5 flex items-center justify-center">
+                <i class="fa-solid fa-angle-right"></i>
+            </span>
+        </button>
+        <img src="/assets/mobAdvPic.png" alt="Advantages picture" width="343" height="106" class="md:hidden my-16" />
+        <img src="/assets/tabAdvPic.png" alt="Advantages picture" width="746" height="240" class="hidden md:block" />
         <section>
-            <div class="mb-14 text-center font-semibold">
-                <h3 class="text-3xl mb-4">Наші переваги</h3>
-                <p class="text-sm">Приєднуйся до <span class="red">тисяч користувачів</span>, які вже відкрили для себе
+            <div class="mb-14 text-center font-semibold md:flex md:mt-22 md:items-center">
+                <h3 class="text-3xl mb-4  w-[350px]">Наші переваги</h3>
+                <p class="text-sm md:text-right">Приєднуйся до <span class="red">тисяч користувачів</span>, які
+                    вже
+                    відкрили для себе
                     новий рівень
-                    комфорту!</p>
-            </div>
-            <div class="bg-[#f2f2f2] rounded-2xl p-6 mb-4">
-                <p class="font-semibold text-xl mb-3">Фотогалерея послуг</p>
-                <div class="flex mb-4"><img src="/assets/mobGalleryPicOne.png" alt="Barbershop servicec picture"
-                        width="137" height="208"><img src="/assets/mobGalleryPicTwo.png" alt="Decorative makeup image"
-                        width="158" height="208">
-                </div>
-                <p class="font-medium mb-3">Переглядай реальні роботи майстрів, оцінюй портфоліо та знаходь найкращих!
+                    комфорту!
                 </p>
-                <div class="flex">
-                    <button class="bg-black rounded-[11px] size-11 ml-auto"><i
-                            class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="flex">
+                <div class="bg-[#f2f2f2] rounded-2xl p-6 mb-4  md:max-w-[361px] md:mr-4">
+                    <p class="font-semibold text-xl mb-3 md:text-3xl">Фотогалерея послуг</p>
+                    <div class="flex mb-4"><img src="/assets/mobGalleryPicOne.png" alt="Barbershop servicec picture"
+                            width="137" height="208"><img src="/assets/mobGalleryPicTwo.png"
+                            alt="Decorative makeup image" width="158" height="208">
+                    </div>
+                    <p class="font-medium mb-3">Переглядай реальні роботи майстрів, оцінюй портфоліо та знаходь
+                        найкращих!
+                    </p>
+                    <div class="flex">
+                        <button class="bg-black rounded-[11px] size-11 ml-auto"><i
+                                class="fa-solid fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div class="hidden md:block md:w-[361px]">
+                    <h3 class="font-semibold text-xl mb-4 px-6 pt-6">Відкритість сервісу</h3>
+                    <p class="font-medium px-6">Доступ до каталогу майстрів, послуг та портфоліо – без реєстрації!</p>
+                    <img src="/assets/line.png" alt="Decorative line" width="375" height="120"
+                        class="my-12 md:w-[361px] md:my-14">
+                    <p class="font-medium px-6">Запис доступний лише зареєстрованим користувачам, щоб ти міг зберігати
+                        свою
+                        історію
+                        відвідувань та
+                        отримувати
+                        нагадування.
+                    </p>
                 </div>
             </div>
-            <div class="gradient-bg rounded-2xl p-6">
-                <p class="font-semibold text-xl">Рейтинги</p>
-                <p class="font-medium">Перевірені майстри, реальні оцінки клієнтів та топові послуги у твоєму місті.</p>
-                <p
-                    class="bg-white flex items-center justify-center font-semibold text-center text-black w-15 rounded-lg">
-                    😍4.9</p>
+            <div class="flex gap-4">
+                <div class="gradient-bg rounded-2xl p-6 md:w-[221px]">
+                    <p class="font-semibold text-xl">Рейтинги</p>
+                    <p class="font-medium">Перевірені майстри, реальні оцінки клієнтів та топові послуги у твоєму місті.
+                    </p>
+                    <p
+                        class="bg-white flex items-center justify-center font-semibold text-center text-black w-15 rounded-lg">
+                        😍4.9
+                    </p>
+                </div>
+                <div class="bg-[#f2f2f2] rounded-2xl p-6 hidden md:block">
+                    <p class="font-semibold text-xl pb-4">Географія</p>
+                    <p class="font-medium pb-8">Vroda Space працює <span class="red">в усіх містах України</span> та
+                        допомагає
+                        нашим майстрам знаходити клієнтів <span class="red">у
+                            країнах ЄС!</span>
+                        🇪🇺 🇺🇦
+                    </p>
+                    <button
+                        class="bg-red-400 w-[295px] py-5 px-6 text-[15px] font-semibold rounded-[16px] flex items-center justify-center">
+                        Приєднатися до Vroda Space
+                        <span
+                            class="rounded-lg bg-white text-red-400 size-6 ml-2 px-2 py-1 flex items-center justify-center">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </span>
+                    </button>
+                </div>
             </div>
         </section>
-        <section class="my-8">
+        <section class="my-8 md:hidden">
             <h3 class="font-semibold text-xl mb-4 px-6">Відкритість сервісу</h3>
             <p class="font-medium px-6">Доступ до каталогу майстрів, послуг та портфоліо – без реєстрації!</p>
             <img src="/assets/line.png" alt="Decorative line" width="375" height="120" class="my-12">
@@ -95,10 +147,11 @@
                 історію
                 відвідувань та
                 отримувати
-                нагадування.</p>
+                нагадування.
+            </p>
         </section>
         <section class="mb-8">
-            <div class="bg-[#f2f2f2] rounded-2xl p-6">
+            <div class="bg-[#f2f2f2] rounded-2xl p-6 md:hidden">
                 <p class="font-semibold text-xl pb-4">Географія</p>
                 <p class="font-medium pb-8">Vroda Space працює <span class="red">в усіх містах України</span> та
                     допомагає
@@ -117,42 +170,66 @@
             </div>
         </section>
         <section>
-            <div class="flex items-end justify-end gap-20.5">
-                <p class="text-sm font-semibold border rounded-2xl px-3.5 py-2.5 w-22">Про нас</p><span
-                    class="rounded-lg bg-red-400 text-white size-11 px-2 py-1 flex items-center justify-center">
+            <div class="flex items-end justify-end gap-20.5 md:block">
+                <p
+                    class="text-sm font-semibold border rounded-2xl px-3.5 py-2.5 w-22 md:border-red-400 md:text-red-400">
+                    Про нас</p>
+                <span
+                    class="rounded-lg bg-red-400 text-white size-11 px-2 py-1 flex items-center justify-center md:hidden">
                     <i class="fa-solid fa-arrow-right cursor-pointer"></i>
                 </span>
             </div>
-            <div class="mb-14">
-                <p class="red font-bold text-[36px]">Vroda Space</p>
-                <p class="red font-semibold pl-15 text-[28px]">-це сучасний сервіс</p>
-                <p class="font-bold text-3xl text-center">для швидкого пошуку майстрів та салонів краси <br>
-                    <i class="fa-solid fa-star text-lg text-gray-300 font-medium "></i>
+            <div class="mb-14 md:relative">
+                <p class="red font-bold text-[36px] md:!text-black md:text-6xl">Vroda Space <span
+                        class="hidden md:inline red md:pl-18 md:font-semibold md:text-3xl">
+                        -це сучасний
+                        сервіс</span></p>
+                <p class="red font-semibold pl-15 text-[28px] md:pl-0 md:hidden"> -це сучасний сервіс</p>
+                <p class="font-bold text-3xl text-center md:text-right md:text-[56px]">
+                    <i
+                        class="fa-solid fa-star text-lg text-gray-300 font-medium absolute left-8 top-36 md:text-3xl !hidden md:block"></i>для
+                    швидкого
+                    пошуку<br class="md:block hidden">
+                    майстрів та
+                    салонів краси <br>
+                    <i class="fa-solid fa-star text-lg text-gray-300 font-medium md:!hidden"></i>
                 </p>
             </div>
-            <p class="mb-8 font-semibold text-sm text-[#999] text-center">Ми прагнемо зробити сферу краси відкритою,
-                доступною та
-                зручною для кожного.</p>
-            <img src="/assets/ourMissionGroup.png" alt="`Our mission group` line" class="-mx-4 !min-w-[375px]"
+            <div class="md:flex justify-between md:items-center">
+                <p class="mb-8 font-semibold text-sm text-[#999] text-center md:text-left md:pr-42 md:mb-0">Ми
+                    прагнемо
+                    зробити
+                    сферу
+                    краси
+                    відкритою,
+                    доступною та
+                    зручною для кожного.
+                </p>
+                <button class="bg-black rounded-[11px] size-11 hidden md:block"><i
+                        class="fa-solid fa-arrow-right "></i></button>
+            </div>
+            <img src="/assets/ourMissionGroup.png" alt="`Our mission group` line" class="-mx-4 !min-w-[375px] md:hidden"
                 width="375" height="112">
-            <div class="flex flex-col gap-4">
+            <img src="/assets/tabOurMission.png" alt="`Our mission group` line"
+                class="-mx-4 !w-[834px] hidden md:block md:mb-10 md:ml-0" width="834" height="112">
+            <div class="flex flex-col gap-4 md:flex-row md:gap-12">
                 <div class="flex flex-col">
-                    <span class="bg-black p-1.5 size-8 rounded-lg mb-3"><i
+                    <span class="bg-black p-1.5 size-8 rounded-lg mb-3 md:flex md:ml-auto md:mr-10"><i
                             class="fa-solid fa-user-group text-white"></i></span>
                     <p>
                         Допомагати клієнтам легко знаходити перевірених майстрів.
                     </p>
                 </div>
                 <div class="flex flex-col">
-                    <span class="bg-black p-1.5 size-8 rounded-lg mb-3"><i
-                            class="fa-solid fa-paintbrush text-white"></i></span>
+                    <span class="bg-black p-1.5 size-8 rounded-lg mb-3 md:flex md:ml-auto"><i
+                            class=" fa-solid fa-paintbrush text-white"></i></span>
                     <p>
                         Давати майстрам інструменти для розвитку та залучення клієнтів.
                     </p>
                 </div>
                 <div class="flex flex-col">
-                    <span class="bg-black px-2 py-1 size-8 rounded-lg mb-3"><i
-                            class="fa-solid fa-gear text-white"></i></span>
+                    <span class="bg-black px-2 py-1 size-8 rounded-lg mb-3 md:flex md:ml-auto"><i
+                            class=" fa-solid fa-gear text-white"></i></span>
                     <p>
                         Запроваджувати технології, що роблять б’юті-індустрію зручнішою.
                     </p>
@@ -160,62 +237,73 @@
             </div>
         </section>
         <section>
-            <h2 class="font-bold text-5xl text-center !my-16">Що кажуть майстри <span class="italic font-light">про
+            <h2 class="font-bold text-5xl text-center !my-16 md:pr-60 md:text-right md:text-[56px]">Що кажуть майстри
+                <span class="italic font-light">про
                     такі</span>
                 <span class="red">сервіси?</span>
             </h2>
-            <div class="flex flex-col gap-4">
-                <div class="pl-4 bg-[#f2f2f2] pr-2.5 py-2 rounded-[0_16px_16px_0] w-[314px]">
-                    <div class="flex items-center justify-between">
-                        <p class="font-light text-3xl mb-3">83%</p>
-                        <span class="bg-white size-11 rounded-lg flex items-center justify-center"><i
+            <div class="flex flex-col gap-4 md:flex-row">
+                <div
+                    class="pl-4 bg-[#f2f2f2] pr-2.5 py-2 rounded-[0_16px_16px_0] w-[314px] md:h-[374px] md:w-[246px] md:-mt-28 md:rounded-2xl">
+                    <div class="flex items-center justify-between md:flex-col md:items-start">
+                        <p class="font-light text-3xl mb-3 md:hidden">83%</p>
+                        <span class="bg-white size-11 rounded-lg flex items-center justify-center "><i
                                 class="fa-solid fa-paintbrush text-black text-[20px]"></i></span>
+                        <p class="font-light text-3xl mb-3 hidden md:block md:text-[77px] md:pt-18">83%</p>
+
                     </div>
                     <p>майстрів кажуть, що витрачають занадто багато часу на ручний запис клієнтів.</p>
                 </div>
-                <div class=" pl-4 bg-[#f2f2f2] pr-2.5 py-2 rounded-[0_16px_16px_0] w-[283px]">
-                    <div class="flex items-center justify-between">
-                        <p class="font-light text-3xl mb-3">76%</p>
+                <div
+                    class=" pl-4 bg-[#f2f2f2] pr-2.5 py-2 rounded-[0_16px_16px_0] w-[283px] md:w-[246px] md:h-[283px] md:-mt-12 md:rounded-2xl">
+                    <div class="flex items-center justify-between md:flex-col md:items-start">
+                        <p class="font-light text-3xl mb-3 md:hidden">76%</p>
                         <span class="bg-white size-11 rounded-lg flex items-center justify-center"><i
                                 class="fa-solid fa-magnifying-glass text-black text-[20px]"></i></span>
+                        <p class="font-light text-3xl mb-3 hidden md:block md:text-[77px] md:mb-6">76%</p>
+
                     </div>
                     <p>шукають нових клієнтів, але не знають, як ефективно це зробити.</p>
                 </div>
-                <div class="pl-4 bg-[#f2f2f2] pr-2.5 py-2 rounded-[0_16px_16px_0] w-[367px] mb-5">
-                    <div class="flex items-center justify-between">
-                        <p class="font-light text-3xl mb-3">91%</p>
+                <div
+                    class="pl-4 bg-[#f2f2f2] pr-2.5 py-2 rounded-[0_16px_16px_0] w-[367px] mb-5 md:w-[240px] md:h-[470px] md:-mt-56 md:rounded-2xl">
+                    <div class="flex items-center justify-between md:flex-col md:items-start">
+                        <p class="font-light text-3xl mb-3 md:hidden">91%</p>
                         <span class="bg-white size-11 rounded-lg flex items-center justify-center"><i
                                 class="fa-regular fa-circle-check text-[20px] p-2"></i>
                         </span>
+                        <p class="font-light text-3xl mb-3 hidden md:block md:pt-40 md:text-[77px] md:mb-12">91%</p>
                     </div>
                     <p>хотіли б автоматизувати запис, але не хочуть платити щомісяця за складні CRM.</p>
                 </div>
             </div>
         </section>
-        <section class="bg-[#f1e7e7] pt-8 w-[375px] -ml-4">
+        <section class="bg-[#f2f2f2] pt-8 w-[375px] -ml-4 md:w-[834px] md:-mt-10 md:-ml-11">
             <p
-                class="font-medium text-xs text-center gradient-bg uppercase mb-6 px-4 py-2.5 rounded-2xl w-[200px] mx-auto">
+                class="font-medium text-xs text-center gradient-bg uppercase mb-6 px-4 py-2.5 rounded-2xl w-[200px] mx-auto  md:flex md:mx-0 md:ml-auto md:mr-11">
                 Для
                 майстрів та клієнтів
             </p>
             <h3 class="font-semibold text-[28px] text-center mb-4">Vroda Space
-                допомагає майстрам</h3>
+                допомагає майстрам
+            </h3>
             <p
-                class="uppercase font-medium text-xs text-center rounded-2xl px-4 py-2.5 gradient-bg-blue w-36 mx-auto mb-10">
+                class="uppercase font-medium text-xs text-center rounded-2xl px-4 py-2.5 gradient-bg-blue w-36 mx-auto mb-10 md:flex md:mr-auto md:ml-11 md:justify-center">
                 Кращий
-                сервіс</p>
-            <div class="flex flex-col gap-6 pb-6">
-                <div class="bg-white rounded-2xl pt-6 px-6 w-[327px] mx-auto">
+                сервіс
+            </p>
+            <div class="flex flex-col gap-6 pb-6 md:flex-row md:gap-4 md:px-11">
+                <div class="bg-white rounded-2xl pt-6 px-6 w-[327px] mx-auto md:w-[238px]">
                     <p class="font-semibold text-center">Зручно керувати своїм записом</p>
                     <img src="/assets/001/mobHelpOne.png" alt="Picture of iPhone with site benefits"
                         class="block mx-auto pt-6" />
                 </div>
-                <div class="bg-white rounded-2xl pt-6 px-6 w-[327px] mx-auto">
+                <div class="bg-white rounded-2xl pt-6 px-6 w-[327px] mx-auto md:w-[238px]">
                     <p class="font-semibold text-center">Отримувати більше відгуків та рейтингів</p>
                     <img src="/assets/mobHelpTwo.png" alt="Picture of iPhone with site benefits"
                         class="block mx-auto pt-6" />
                 </div>
-                <div class=" bg-white rounded-2xl pt-6 px-6 w-[327px] mx-auto">
+                <div class=" bg-white rounded-2xl pt-6 px-6 w-[327px] mx-auto md:w-[238px]">
                     <p class="font-semibold text-center">Залишатися на зв’язку з клієнтами через додаток</p>
                     <img src="/assets/001/mobHelpThree.png" alt="Picture of iPhone with site benefits"
                         class="block mx-auto pt-6" />
@@ -223,46 +311,56 @@
             </div>
         </section>
         <section class="my-8">
-            <p class="border rounded-2xl text-center border-red-400 text-red-400 px-4 py-2.5">Чому клієнти
+            <p
+                class="border rounded-2xl text-center border-red-400 text-red-400 px-4 py-2.5 md:w-[285px] md:px-2 md:text-sm md:mx-auto">
+                Чому
+                клієнти
                 обирають такі
                 сервіси?
             </p>
-            <h3 class="font-semibold text-[28px] mt-6 mb-14 text-center">Клієнти хочуть зручності.
-                Ми це забезпечуємо!</h3>
-            <div class="flex flex-col gap-4">
-                <div class="bg-[#f2f2f2] rounded-3xl p-6">
-                    <p class="font-light text-[30px] mb-5">83%</p>
+            <h3 class="font-semibold text-[28px] mt-6 mb-14 text-center md md:text-3xl md:px-44">Клієнти хочуть
+                зручності.
+                Ми це забезпечуємо!
+            </h3>
+            <div class="flex flex-col gap-4 md:flex-row md:items-end">
+                <div class="bg-[#f2f2f2] rounded-3xl p-6 md:flex md:flex-col md:w-[425px] md:h-[335px]">
+                    <p class="font-light text-[30px] mb-5 md:text-[77px]">83%</p>
                     <p class="font-semibold text-xl mb-4">клієнтів кажуть</p>
                     <p class="text-sm font-medium">що їм <span class="red">незручно</span> записуватись <span
                             class="red">через соцмережі</span> та
                         чати. Вони хочуть швидкого онлайн-запису без
-                        очікування відповіді.</p>
+                        очікування відповіді.
+                    </p>
                 </div>
                 <div class="bg-[#f2f2f2] rounded-3xl p-6">
-                    <div class="flex items-center justify-between">
-                        <p class="font-light text-[30px] mb-5">91%</p>
-                        <img src="/assets/mobUsers.png" class="pb-4" alt="Picture of users" width="160" height="40">
+                    <div class="flex items-center justify-between md:flex md:flex-col md:w-[194px] md:h-[130px]">
+                        <p class="font-light text-[30px] mb-5 md:flex md: mr-auto md:text-[77px]">91%</p>
+                        <img src="/assets/mobUsers.png" class="pb-4 md:hidden" alt="Picture of users" width="160"
+                            height="40">
                     </div>
                     <p class="font-semibold text-xl mb-4">клієнтів готові змінити майстра</p>
                     <p class="text-sm font-medium">якщо знайдуть більш зручний спосіб запису та взаємодії.</p>
+                    <img src="/assets/mobUsers.png" class="pb-4 hidden md:block md:mt-8" alt="Picture of users"
+                        width="160" height="40">
+
                 </div>
-                <div class="bg-[#f2f2f2] rounded-3xl p-6">
-                    <p class="font-light text-[30px] mb-5">76%</p>
+                <div class="bg-[#f2f2f2] rounded-3xl p-6 md:flex md:flex-col md:w-[450px] md:h-[300px]">
+                    <p class="font-light text-[30px] md:text-[77px]">76%</p>
                     <p class="font-semibold text-xl mb-4">шукають перевірених майстрів</p>
-                    <p class="text-sm font-medium">але бояться невідомих сервісів без відгуків.p>
+                    <p class="text-sm font-medium">але бояться невідомих сервісів без відгуків</p>
                 </div>
             </div>
         </section>
         <section class="mb-8">
-            <span class="red font-semibold text-[28px] flex items-center gap-2">Vroda space<img src="/assets/h1line.png"
-                    alt="Decorative line" width="109" height="13">
+            <span class="red font-semibold text-[28px] flex items-center gap-2 md:!text-black md:justify-center">Vroda
+                space<img src="/assets/h1line.png" alt="Decorative line" width="109" height="13">
                 це</span>
             <p class="text-center  font-semibold text-[28px]">Легкий запис(<img src="/assets/mobUsers.png"
                     class="inline" alt="User's profile pictures in a row" width="80" height="50">) без дзвінків
                 та листування.
             </p>
-            <p class="font-semibold text-xl text-center mb-14">Перевірені майстрами з відгуками <span
-                    class="gradient-bg rounded-lg py-1 px-2 w-12">😍 4.9</span> та
+            <p class="font-semibold text-xl text-center mb-14 md:text-3xl">Перевірені майстрами з відгуками <span
+                    class="gradient-bg rounded-lg py-1 px-2 w-12 md:!text-lg">😍 4.9</span> та
                 рейтингами. <br> Вся історія записів в
                 одному місці.
             </p>
@@ -277,47 +375,62 @@
                 краси!</i>
         </section>
         <section class="my-8">
-            <h4 class="font-semibold text-[28px] mb-4 text-center">це Блог <br> Vroda Space</h4>
-            <p class="text-center font-semibold text-sm mb-4">Залишайтеся з нами, щоб завжди <span
-                    class="red">отримувати
-                    актуальну</span> інформацію та
-                <span class="red">бути в курсі</span>
-                останніх
-                подій.
-            </p>
+            <div class="md:flex">
+                <div class="md:flex ">
+                    <h4 class="font-semibold text-[28px] mb-4 text-center md:w-[220px]">це Блог <br> Vroda Space</h4>
+                    <span
+                        class="rounded-lg bg-red-400 text-white mb-14 size-11 px-2 py-1 hidden items-center justify-center mx-auto md:mt-10 md:flex">
+                        <i class="fa-solid fa-arrow-right cursor-pointer"></i>
+                    </span>
+                </div>
+                <p class="text-center font-semibold text-sm mb-4 md:text-right md:mt-10 md:pl-24">Залишайтеся з нами,
+                    щоб завжди
+                    <span class="red">отримувати
+                        актуальну</span> інформацію та
+                    <span class="red">бути в курсі</span>
+                    останніх
+                    подій.
+                </p>
+            </div>
             <span
-                class="rounded-lg bg-red-400 text-white mb-14 size-11 px-2 py-1 flex items-center justify-center mx-auto">
+                class="rounded-lg bg-red-400 text-white mb-14 size-11 px-2 py-1 flex items-center justify-center mx-auto md:hidden">
                 <i class="fa-solid fa-arrow-right cursor-pointer"></i>
             </span>
-            <div class="flex flex-col gap-4">
-                <div class="bg-[#f2f2f2] rounded-2xl"><img src="/assets/mobNewTrends.png"
-                        alt="Picture of human holding product" width="343" height="314" class="rounded-t-2xl">
-                    <div class="px-4 pt-6">
+            <div class="flex flex-col gap-4 md:flex-row md:flex-wrap md:gap-4">
+                <div class="bg-[#f2f2f2] rounded-2xl md:w-[365px] ">
+                    <img src="/assets/mobNewTrends.png" alt="Picture of human holding product" width="343" height="314"
+                        class="rounded-t-2xl">
+                    <div class="px-4 pt-6 ">
                         <h5 class="capitalize text-xl font-semibold mb-3 pt-3">Нові тренди у світі краси</h5>
                         <p class="truncate-multiline mb-3">Б’юті-індустрія не стоїть на місці, і
                             майстрам важливо постійно
                             вдосконалювати свої навички. У цьому розділі ми
-                            розповідаємо про актуальні тренди, ефективні методи залучення клієнтів і секрети успішної
+                            розповідаємо про актуальні тренди, ефективні методи залучення клієнтів і секрети
+                            успішної
                             роботи. Читай, застосовуй і
-                            розвивай свій бізнес разом із Vroda Space!</p>
+                            розвивай свій бізнес разом із Vroda Space!
+                        </p>
                     </div>
                     <div class="flex items-center justify-between px-4 pb-6">
                         <div class="flex items-center gap-2">
                             <p class="font-semibold text-xl text-[#999] px-4 py-2.5 border rounded-full border-[#999]">
-                                Beauty</p>
+                                Beauty
+                            </p>
                             <p class="font-semibold text-xl text-[#999] px-4 py-2.5 border rounded-full border-[#999]">
-                                Тренди</p>
+                                Тренди
+                            </p>
                         </div>
                         <a href="./blog-item.html"><span
                                 class="rounded-lg bg-black text-white size-11 px-2 py-1 flex items-center justify-center">
                                 <i class="fa-solid fa-arrow-right cursor-pointer"></i> </span></a>
                     </div>
                 </div>
-                <div class="bg-[#f2f2f2] rounded-2xl"><img src="/assets/line.png" alt="Decorative line" width="343"
-                        height="91" class="mt-8">
+                <div class="bg-[#f2f2f2] rounded-2xl md:w-[365px] ">
+                    <img src="/assets/line.png" alt="Decorative line" width="343" height="91" class="mt-8">
                     <div class="px-4 pt-6">
                         <h5 class="capitalize text-xl font-semibold mb-3 pt-3">Поради для майстрів (як залучати
-                            клієнтів, як працювати з рейтингом).</h5>
+                            клієнтів, як працювати з рейтингом).
+                        </h5>
                         <p class="mb-3">Бути б’юті-майстром – це не тільки про талант, а й про вміння
                             залучати клієнтів, працювати з репутацією та розвивати
                             власний бренд...
@@ -325,33 +438,39 @@
                     </div>
                     <div class="flex items-center justify-between px-4 pb-6">
                         <p class="font-semibold text-xl text-white bg-black px-4 py-2.5 rounded-full">
-                            Beauty</p>
+                            Beauty
+                        </p>
                         <span class="rounded-lg bg-black text-white size-11 px-2 py-1 flex items-center justify-center">
                             <i class="fa-solid fa-arrow-right cursor-pointer"></i> </span>
                     </div>
                 </div>
-                <div class="gradient-bg rounded-2xl">
+                <div class="gradient-bg rounded-2xl md:w-[365px] ">
                     <div class="flex items-center justify-between px-4 py-6">
                         <p class="font-semibold text-xl text-white bg-black px-4 py-2.5 rounded-full">
-                            Лайфхаки</p>
+                            Лайфхаки
+                        </p>
                         <span class="rounded-lg bg-black text-white size-11 px-2 py-1 flex items-center justify-center">
                             <i class="fa-solid fa-arrow-right cursor-pointer"></i> </span>
                     </div>
                     <div class="px-4 pt-6">
                         <h5 class="capitalize text-xl font-semibold mb-6 pt-28">Інтерв’ю з топ-майстрами – історії
                             успіху
-                            та професійні лайфхаки!</h5>
-                        <p class="mb-3 font-medium">Дізнайтеся більше про секрети успіху та професійні поради від нашого
+                            та професійні лайфхаки!
+                        </h5>
+                        <p class="mb-3 font-medium">Дізнайтеся більше про секрети успіху та професійні поради від
+                            нашого
                             визнаного
                             майстра тижня.
                         <p>
                     </div>
                 </div>
-                <div class="bg-[#f2f2f2] rounded-2xl"><img src="/assets/line.png" alt="Picture of human holding product"
-                        width="343" height="91" class="mt-8">
+                <div class="bg-[#f2f2f2] rounded-2xl md:w-[365px] ">
+                    <img src="/assets/line.png" alt="Picture of human holding product" width="343" height="91"
+                        class="mt-8">
                     <div class="px-4 pt-6">
                         <h5 class="capitalize text-xl font-semibold mb-3 pt-3">Поради для майстрів (як залучати
-                            клієнтів, як працювати з рейтингом).</h5>
+                            клієнтів, як працювати з рейтингом).
+                        </h5>
                         <p class="mb-3">Бути б’юті-майстром – це не тільки про талант, а й про вміння
                             залучати клієнтів, працювати з репутацією та розвивати
                             власний бренд...
@@ -359,7 +478,8 @@
                     </div>
                     <div class="flex items-center justify-between px-4 pb-6">
                         <p class="font-semibold text-xl text-white bg-black px-4 py-2.5 rounded-full">
-                            Beauty</p>
+                            Beauty
+                        </p>
                         <span class="rounded-lg bg-black text-white size-11 px-2 py-1 flex items-center justify-center">
                             <i class="fa-solid fa-arrow-right cursor-pointer"></i> </span>
                     </div>
@@ -368,21 +488,21 @@
         </section>
         <section class="my-8">
             <h4 class="font-semibold text-[28px]">Часті запитання</h4>
-            <img src="/assets/mobFAQ.png" alt="Decorative image of girl" width="343" height="249" class="my-14">
+            <img src="/assets/mobFAQ.png" alt="Decorative image of girl" width="343" height="249"
+                class="my-14 md:hidden">
+            <img src="/assets/tabFAQ.png" alt="Decorative image of girl" width="746" height="249"
+                class="my-14 hidden md:block object-contain">
             <div class="flex flex-col gap-4">
                 <details class="group transition-all duration-300">
                     <summary class="relative flex justify-between items-center cursor-pointer text-lg font-medium text-black pb-4
-                                                    after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:bg-black
-                                                    group-open:after:content-none">
+                     after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:bg-black
+                     group-open:after:content-none">
                         Чи потрібно платити за використання сервісу?
-
                         <i
                             class="fa-solid fa-angle-down p-2 transform transition-transform duration-300 group-open:rotate-180"></i>
                     </summary>
-
-                    <div
-                        class="relative mt-4 text-sm text-gray-700
-                                                after:content-[''] after:block after:h-[1px] after:w-full after:bg-black after:mt-4">
+                    <div class="relative mt-4 text-sm text-gray-700
+                     after:content-[''] after:block after:h-[1px] after:w-full after:bg-black after:mt-4">
                         Ні, використання сервісу для клієнтів є безкоштовним. Майстри можуть користуватись базовими
                         функціями безкоштовно або
                         обрати преміум-доступ для розширених можливостей.
@@ -390,51 +510,42 @@
                 </details>
                 <details class="group transition-all duration-300">
                     <summary class="relative flex justify-between items-center cursor-pointer text-lg font-medium text-black pb-4
-                                                    after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:bg-black
-                                                    group-open:after:content-none">
+                     after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:bg-black
+                     group-open:after:content-none">
                         Чи можна змінити або скасувати запис?
-
                         <i
                             class="fa-solid fa-angle-down p-2 transform transition-transform duration-300 group-open:rotate-180"></i>
                     </summary>
-
-                    <div
-                        class="relative mt-4 text-sm text-gray-700
-                                                after:content-[''] after:block after:h-[1px] after:w-full after:bg-black after:mt-4">
+                    <div class="relative mt-4 text-sm text-gray-700
+                     after:content-[''] after:block after:h-[1px] after:w-full after:bg-black after:mt-4">
                         Так, ви можете змінити або скасувати запис щонайменше за 2 години до запланованого часу через
                         мобільний додаток або сайт.
                     </div>
                 </details>
                 <details class="group transition-all duration-300">
                     <summary class="relative flex justify-between items-center cursor-pointer text-lg font-medium text-black pb-4
-                                                    after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:bg-black
-                                                    group-open:after:content-none">
+                     after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:bg-black
+                     group-open:after:content-none">
                         Які міста підтримує сервіс?
-
                         <i
                             class="fa-solid fa-angle-down p-2 transform transition-transform duration-300 group-open:rotate-180"></i>
                     </summary>
-
-                    <div
-                        class="relative mt-4 text-sm text-gray-700
-                                                after:content-[''] after:block after:h-[1px] after:w-full after:bg-black after:mt-4">
+                    <div class="relative mt-4 text-sm text-gray-700
+                     after:content-[''] after:block after:h-[1px] after:w-full after:bg-black after:mt-4">
                         Сервіс наразі доступний у Києві, Львові, Харкові, Одесі та Дніпрі. Ми активно працюємо над
                         розширенням географії.
                     </div>
                 </details>
                 <details class="group transition-all duration-300">
                     <summary class="relative flex justify-between items-center cursor-pointer text-lg font-medium text-black pb-4
-                                                    after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:bg-black
-                                                    group-open:after:content-none">
+                     after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-[1px] after:w-full after:bg-black
+                     group-open:after:content-none">
                         Чи можу я переглядати майстрів без реєстрації?
-
                         <i
                             class="fa-solid fa-angle-down p-2 transform transition-transform duration-300 group-open:rotate-180"></i>
                     </summary>
-
-                    <div
-                        class="relative mt-4 text-sm text-gray-700
-                                                after:content-[''] after:block after:h-[1px] after:w-full after:bg-black after:mt-4">
+                    <div class="relative mt-4 text-sm text-gray-700
+                     after:content-[''] after:block after:h-[1px] after:w-full after:bg-black after:mt-4">
                         Так, усі профілі майстрів, їхні роботи та рейтинги доступні для перегляду без реєстрації. Але
                         щоб
                         записатися на послугу, потрібно створити акаунт.
@@ -451,15 +562,14 @@
             бронюванням.
             Оренда робочого місця для майстра
             в салоні
-            краси.</p>
+            краси.
+        </p>
         <nav>
             <ul class="flex flex-col items-center text-center gap-6 text-xl font-semibold">
                 <li><a href="./index.html">Головна</a></li>
-
                 <li><a href="./blog.html">Блог</a></li>
                 <li><a href="./about-us.html">Про нас</a></li>
                 <li><a href="./contact-us.html">Контакти та зворотній звʼязок</a></li>
-
                 <li>Політика конфіденційності Vroda Space</li>
                 <li>Умови використання</li>
                 <li>Vroda Space в мережі</li>
