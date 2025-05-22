@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+
+<body class="container">
+    <header class="flex items-center mt-3.5 justify-between mb-10.5">
+        <div class="flex items-center gap-2">
+            <i class="fa-solid fa-bars w-6 h-6 cursor-pointer"></i>
+            <img src="/assets/mob_logo.png" alt="Website logo" width="40" height="40">
+            <p class="font-bold text-3xl">Vroda</p>
+        </div>
+        <button class="rounded-[11px] bg-black border-0 text-white px-3 py-3.5">Вхід/Реєстрація</button>
+    </header>
+    <main>
+        <section class="my-8">
+            <h3 class="font-semibold text-3xl text-center mb-4">Наші контакти</h3>
+            <p class="text-sm font-semibold text-right pb-16">Зв’яжіться з нами – <span class="red">ми завжди на
+                    зв’язку!</span></p>
+            <h4 class="font-semibold text-[28px] mb-4">ТОВ "Vroda Space"</h4>
+            <p class="font-medium mb-8">Україна, 08324,<br>
+                Київська обл., Бориспільський р-н, село Гора,<br>
+                вул. Київська, будинок 43б</p>
+            <div class="flex gap-4 items-center mb-3">
+                <span><i class="font-medium fa-regular fa-phone rounded-[11px] p-3 bg-red-400 text-white"></i></span>
+                <p>+380993537308</p>
+            </div>
+            <div class="flex gap-4 items-center mb-3">
+                <i class="font-medium fa-regular fa-envelope rounded-[11px] p-3 bg-red-400 text-white"></i>
+                <p>+contact@vroda.space</p>
+            </div>
+            <p>Vroda Space в мережі</p>
+            <div class="flex items-center gap-6 py-6 justify-start">
+                <i class="fa-brands fa-facebook-f p-4 bg-red-400 rounded-lg text-white"></i>
+                <i class="fa-brands fa-instagram p-4 bg-red-400 rounded-lg text-white"></i>
+            </div>
+        </section>
+        <section>
+            <h3 class="font-semibold text-3xl text-center mb-2">Звʼяжіться з нами</h3>
+            <p class="font-semibold text-sm mb-11 text-center px-5">Напишіть нам повідомлення і <span class="red">ми
+                    зв’яжемось</span> з
+                Вами
+                якнайшвидше!</p>
+        </section>
+        <section>
+            <form>
+                <label for="name" class="flex flex-col font-medium mb-6">Імʼя*
+                    <input type="text" placeholder="Введіть ваше імʼя" id="name"
+                        class="border border-[#e0e0e0] rounded-md py-2.5 pl-4 bg-white placeholder:font-medium text-[#999]">
+                </label>
+                <label for="email" class="flex flex-col font-medium mb-6">Email*
+                    <input type="email" placeholder="Введіть ваш Email" id="email"
+                        class="border border-[#e0e0e0] rounded-md py-2.5 pl-4 bg-white placeholder:font-medium text-[#999]">
+                </label>
+                <label for="message" class="flex flex-col font-medium mb-6">Ваше повідомлення*
+                    <textarea placeholder="Введіть ваше повідомлення" rows="7" id="message"
+                        class="border border-[#e0e0e0] rounded-md py-2.5 pl-4 bg-white placeholder:font-medium text-[#999]"></textarea>
+                </label>
+                <label for="agree" class="flex items-start gap-4">
+                    <input type="checkbox" name="agree" id="agree"
+                        class="rounded w-4 h-4 border border-[#ed4457] bg-[#ed4457] accent-[#ed4457]">
+
+                    <span class="text-center font-medium text-sm">Надсилаючи цю форму, ви погоджуєтесь на обробку ваших
+                        даних згідно з нашою
+                        <span class="underline">політикою
+                            конфіденційності</span>
+                    </span>
+                </label>
+                <button type="submit"
+                    class="text-[15px] font-semibold rounded-2xl mt-6  w-full bg-red-400 text-white py-2.5">Звʼязатись
+                    зі
+                    мною</button>
+            </form>
+        </section>
+    </main>
+    <footer class="gradient-bg-blue rounded-t-4xl px-6 py-8">
+        <h6 class="flex items-center justify-center gap-2 mb-6 text-5xl font-bold"> <img src="/assets/mob_logo.png"
+                alt="">Vroda
+        </h6>
+        <p class="font-medium text-center mb-8">Сервіс для швидкого пошуку майстрів та салонів краси з онлайн
+            бронюванням.
+            Оренда робочого місця для майстра
+            в салоні
+            краси.</p>
+        <nav>
+            <ul class="flex flex-col items-center text-center gap-6 text-xl font-semibold">
+                <li>Головна</li>
+                <li>Блог</li>
+                <li>Про нас</li>
+                <li>Контакти та зворотній звʼязок</li>
+                <li>Політика конфіденційності Vroda Space</li>
+                <li>Умови використання</li>
+                <li>Vroda Space в мережі</li>
+            </ul>
+            <div class="flex items-center gap-6 py-6 justify-center">
+                <i class="fa-brands fa-facebook-f p-4 bg-white rounded-lg"></i>
+                <i class="fa-brands fa-instagram p-4 bg-white rounded-lg"></i>
+            </div>
+        </nav>
+        <p class="text-center">UA 🇺🇦 <i class="fa-solid fa-angle-down cursor-pointer"></i>
+        </p>
+    </footer>
+</body>
+
+</html>

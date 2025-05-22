@@ -101,3 +101,9 @@ img {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
+.blog-heading {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 24px;
+}
